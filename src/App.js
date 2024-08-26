@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import StateComponent from "./component/StateComponent";
+import {Fragment} from 'react';
+import StateComponentQ from "./component/StateComponentQ";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(){
+
+return(
+<Fragment>
+<StateComponent/>
+<br/>
+<StateComponentQ/>
+</Fragment>
+)
 }
 
 export default App;
